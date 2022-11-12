@@ -33,7 +33,36 @@ h2 {
     box-shadow: 5px 5px #43E0C6; 
     transform: translatey(-5%);
 }
+.container3 {
+    position: relative;
+    width: 50%;
+  }
+  
 
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:transparent
+  }
+  
+  .container3:hover .overlay {
+    opacity: 1;
+  }
+  
+  .hovertext {
+    color: black;
+    font-size: 15px;
+   margin-left: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
 #image {
     
         border-style: solid;
