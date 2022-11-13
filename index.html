@@ -101,17 +101,15 @@ var image =  document.getElementById("image");
 
             myID = document.getElementById("image3");
 
-var myScrollFunc = function() {
-  var y = window.scrollY;
-  if (y >= 700) {
+
+
+window.addEventListener("scroll", function() {
+  var elementTarget = document.getElementById("image");
+  if (window.scrollY >  (elementTarget.offsetTop + elementTarget.offsetHeight)/1.5) {
     myID.className = "cta show"
   } else {
     myID.className = "cta hide"
-  }
-};
-
-window.addEventListener("scroll", myScrollFunc);
-
+  }  })
 </script>
 
     </body>
