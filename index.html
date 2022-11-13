@@ -74,7 +74,7 @@
                           <br>
 <div class="art">
 
-                          <img id="image2" alt="" src="./gifs/pixelart.png"/>
+                          <img id="image3" alt="" src="./gifs/pixelart.png"/>
                         </div>
 
                         <div class="footer">
@@ -99,7 +99,18 @@ var image =  document.getElementById("image");
                 }
             }
 
+            myID = document.getElementById("image3");
 
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 700) {
+    myID.className = "cta show"
+  } else {
+    myID.className = "cta hide"
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
 
 </script>
 
