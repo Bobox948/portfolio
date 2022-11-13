@@ -35,6 +35,7 @@ for (let i=0;i < divcolor2.length;i++){
 divcolor2[i].addEventListener('mouseover', function(){
 
 
+
 var random = Math.floor((Math.random() * colors.length));
 var random2 = colors[random] // random color from the color array on the default grid
     
@@ -44,7 +45,9 @@ var random2 = colors[random] // random color from the color array on the default
 
 
     
+
 })
+
 }
 
     
