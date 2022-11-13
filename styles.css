@@ -1,7 +1,5 @@
 
-body {
-    max-height: 1000px;
-}
+
 .header {
     background-color: #1F2937;
     color: white;
@@ -120,15 +118,11 @@ display:flex;
     margin-right: 200px;
     color:  #1F2937;
     font-weight: 300;
-    padding: 30px;
+    padding: 30px;}
 
-#image3 {
 
-    width: 200px;
-    height: 200px;
-}
 
-}   
+
 #nav {
     display:flex;
 }
@@ -286,6 +280,11 @@ position: relative;
 
 }
 
+#image3{
+
+    width: 350px;
+    height: 200px;
+    margin-right: 20px;}
 
 .footer2 {
 

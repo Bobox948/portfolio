@@ -74,7 +74,7 @@
                           <br>
 <div class="art">
 
-                          <img id="image3" alt="" src="./gifs/pixelart.png"/>
+                          <img id="image3" class="cta hide" alt="" src="./gifs/pixelart.png"/>
                         </div>
 
                         <div class="footer">
@@ -104,12 +104,13 @@ var image =  document.getElementById("image");
 
 
 window.addEventListener("scroll", function() {
-  var elementTarget = document.getElementById("image");
-  if (window.scrollY >  (elementTarget.offsetTop + elementTarget.offsetHeight)/1.5) {
+  if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
     myID.className = "cta show"
   } else {
     myID.className = "cta hide"
   }  })
+
+  elementtargt.offset
 </script>
 
     </body>
