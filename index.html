@@ -103,18 +103,14 @@ var image =  document.getElementById("image");
 
 
 
-            window.onscroll = function()
-{
-   var scrollHeight, totalHeight;
-   scrollHeight = document.body.scrollHeight;
-   totalHeight = window.scrollY + window.innerHeight;
 
-   if(totalHeight >= scrollHeight)
-   {
-    myID.className = "cta show"
+            window.onscroll = function(ev) {
+    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight -2) {
+      myID.className = "cta show"
   } else {
     myID.className = "cta hide"
   } }
+
 </script>
 
     </body>
