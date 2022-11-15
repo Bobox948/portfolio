@@ -12,6 +12,22 @@
     
 }
 
+.navbar-nav{
+
+    display:flex;
+    align-items: left;
+    justify-content: left;
+
+}
+.buttons{
+
+    display:flex;
+    align-items: right;
+    justify-content: right;
+    gap:10px;
+
+
+}
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -22,7 +38,9 @@ h1 {
 .sectimg {
 
     margin-left: 10px;
+    
 }
+
 .last {
 margin-right: 10px;
 
@@ -40,6 +58,7 @@ h2 {
 .flex{
 
     display:flex;
+    flex-wrap: wrap;
 }
 
 
@@ -86,21 +105,14 @@ h2 {
 .premier{
     background-color: #1F2937;
 }
-.buttons{
 
-    display:flex;
-    align-items: right;
-    justify-content: right;
-    gap:10px;
-
-}
 .quote{
 display:flex;
     font-size: 24px;
     color:  #1F2937;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
     font-weight: 300;
 
 }
@@ -192,6 +204,7 @@ display:flex;
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
+    flex-wrap: wrap;
 }
 .text{
 display: flex;
@@ -208,6 +221,8 @@ margin-top: 15px;
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
+    flex-wrap: wrap;
+
 }
 
 
