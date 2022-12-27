@@ -58,7 +58,7 @@ h2 {
 .flex{
 
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 
@@ -89,10 +89,10 @@ h2 {
     margin-left: 50px;
  margin-right: 50px;
 }
-
+/* logos growing on hover */
 .grow{
 
-    transition: width 1s, height 1s, transform 1s;
+    transition: width 1s, height 1s, transform 1s; 
 
 }
 
@@ -167,9 +167,9 @@ display:flex;
     transition: all 1s;
 }
 .hide {
-    transition: transform 1s ease-in-out;
-    transform: translateY(150px);
-    z-index: 1;
+    transition: transform 1s ease-in-out; /* 1s of transition sliding */    
+    transform: translateY(150px); /* goes towards Y direction (top) by 150px */
+    z-index: 1; /* priority of display, overlay */
    
 }
 .show {
@@ -241,7 +241,7 @@ button {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit; /* removes blue color form links and underlining */
 }
 
 #logo {
@@ -278,9 +278,9 @@ margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-height: 150px;   
-	z-index: 2;
-position: relative;
+    height: 150px;   
+	z-index: 2; /* overlays the picture showing when scrolling down */ 
+    position: relative;
 
 
 }
@@ -327,6 +327,7 @@ margin-top: 500px;
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform;
   }
+  
   .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
     -webkit-transform: scale(1.1);

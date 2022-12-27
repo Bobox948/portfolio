@@ -3,7 +3,6 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="initial-scale=1.0" content="width=device-width">
-        <!-- I took the file of the lab trivia as a base and made improvements according to what I wanted-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
@@ -38,8 +37,7 @@
           <br>
           
           <div class="flex">
-              <img id="image" alt="" src="./gifs/boris.jpeg" onclick="changeColor()"/>
-            
+              <img id="image" alt="" src="./gifs/boris.jpeg" onclick="changeColor()"/> <!-- on click, it switches to a black and white picture -->
                     <div class="sectimg">
                     <h2>About me :</h2>
                             <ul>
@@ -73,7 +71,7 @@
                           <br>
 <div class="art">
 
-                          <img id="image3" class="cta hide" alt="" src="./gifs/pixelart.png"/>
+                          <img id="image3" class="cta hide" alt="" src="./gifs/pixelart.png"/><!-- when scrolled down to the max, it appears-->
                         </div>
 
                         <div class="footer">
@@ -84,7 +82,7 @@
 
 <script>
 
-var image =  document.getElementById("image");
+var image =  document.getElementById("image"); 
 
             function changeColor()
             {
@@ -103,12 +101,12 @@ var image =  document.getElementById("image");
 
 
 
-            window.onscroll = function(ev) {
+            window.onscroll = function() {
     if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight -2) {
       myID.className = "cta show"
   } else {
     myID.className = "cta hide"
-  } }
+  } } // when scrolled down max, picture is popping
 
 </script>
 
