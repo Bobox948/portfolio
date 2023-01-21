@@ -39,10 +39,21 @@ document.addEventListener('DOMContentLoaded', function() { // making sure the do
   var game = []
 
   function Game() {
-    if (document.getElementById('name1').value == '')
-    { var name1 = 'Player 1'}
+    if (document.getElementById('name1').value == '' && document.getElementById('name2').value == '')
+    { var name1 = 'Player 1'
+    var name2 = 'Player 2'}
+    else if (document.getElementById('name1').value == '')
+    {
+        var name1 = 'Player 1'
+        var name2 = document.getElementById('name2').value
+    }
+
     else if (document.getElementById('name2').value == '')
-    { var name2 = 'Player 2'}
+
+    {
+        var name2 = 'Player 2'
+        var name1 = document.getElementById('name1').value
+    }
     else {
     var name1 = document.getElementById('name1').value
     var name2 = document.getElementById('name2').value } 
