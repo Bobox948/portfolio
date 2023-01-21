@@ -205,10 +205,12 @@ display:flex;
     justify-content: space-around;
     margin-top: 100px;
     flex-wrap: wrap;
+    gap: 25px;
+
 }
 .text{
 display: flex;
-font-size: 24px;
+font-size: 20px;
 font-weight: 900;
 justify-content: center;
 margin-top: 15px;
