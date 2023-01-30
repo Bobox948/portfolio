@@ -359,11 +359,12 @@ margin-right: auto;
     align-items: center;
     justify-content: center;
     height: 150px;   
-    border-width: 0.5px;
 
     margin-top: 300px;
-    border-top:solid;
-    border-color: white;
+    border-top: solid;
+    border-width: 0.5px;
+
+    color: white;
 
 
 }
