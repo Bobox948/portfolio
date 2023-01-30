@@ -1,9 +1,37 @@
 
 
+.light { /* declaring variables for the dark and light mode */
+    --main-bg-color:white;
+    --main-tx-color: #1F2937;
+}
+  
+  .dark {
+    --main-bg-color: #1F2937;
+    --main-tx-color:white;
+  }
+  
+  .wrapper { /* the div wrapper for night or light mode */
+   
+    background: var(--main-bg-color);
+    color : var(--main-tx-color);
+
+  }
+  
+.bottom3 { /* the quote part when the DOM is created in dark mode */
+    background-color: #1F2937;
+    border-top:solid;
+    border-bottom: solid;
+    border-width: 0.5px;
+  
+}
+
+.bottom3 p{ /* the quote paragraph part when the DOM is created in dark mode */
+    color: white;
+
+}
 .header {
     background-color: #1F2937;
     color: white;
-    padding: 2rem 1rem;
     display: flex;
     text-align: center;
     align-items: center;
@@ -11,6 +39,23 @@
     height: 200px;
     
 }
+.navbar.navbar-expand-sm.navbar-dark{ /* when dark mode is activated, the navbar turns into navbar-dark from boostrap */
+    background-color: #1F2937;
+    border-top: solid;
+    border-bottom: solid;
+
+    border-color: white;
+}
+
+.navbar.navbar-expand-sm.navbar-light{ 
+    border-top: solid;
+    border-bottom: solid;
+    background-color: #E5E7EB;
+    border-color: transparent; /* We have to let the border because if not, knowing that the border is solid and white in dark mode, it's creating a little page movement when switching */
+
+}
+
+
 
 .navbar-nav{
 
@@ -18,8 +63,10 @@
     align-items: left;
     justify-content: left;
 
+    
+
 }
-.buttons{
+.buttons{ 
 
     display:flex;
     align-items: right;
@@ -89,6 +136,7 @@ h2 {
     margin-left: 50px;
  margin-right: 50px;
 }
+
 /* logos growing on hover */
 .grow{
 
@@ -97,9 +145,16 @@ h2 {
 }
 
 .grow:hover {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
 
+}
+
+#switch{
+    background-color: #1F2937;
+    color: white;
+    border: solid;
+    border-color: white;
 }
 
 .premier{
@@ -107,11 +162,13 @@ h2 {
 }
 
 .quote{
-display:flex;
+    display:flex;
     font-size: 24px;
     color:  #1F2937;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 10px;
+    margin-top: 50px;
     padding: 20px;
     font-weight: 300;
 
@@ -125,7 +182,8 @@ display:flex;
     margin-right: 200px;
     color:  #1F2937;
     font-weight: 300;
-    padding: 30px;}
+    padding: 30px;
+}
 
 
 
@@ -162,18 +220,19 @@ display:flex;
 
 }
 
-.cta {
+.cta { /* the face popping at the bottom of the page */
   
     transition: all 1s;
 }
+
 .hide {
     transition: transform 1s ease-in-out; /* 1s of transition sliding */    
     transform: translateY(150px); /* goes towards Y direction (top) by 150px */
-    z-index: 1; /* priority of display, overlay */
+    z-index: 1; /* priority of display over footer, overlay */
    
 }
 .show {
-    transform: translateY(5px);
+    transform: translateY(5px); /* 5px up */
 }
 
 
@@ -184,10 +243,6 @@ display:flex;
 }
 
 
-
-
-
-
 .container2 {
     display:flex;    
     gap: 15px;
@@ -195,7 +250,7 @@ display:flex;
     background-color: #1F2937;
     color: #E5E7EB;
     margin-left: 50px;
- margin-right: 50px;
+    margin-right: 50px;
 }
 
 .main-projects
@@ -230,20 +285,17 @@ margin-top: 15px;
 button {
     background-color: #3882F6;
     color: white;
-
     border-radius: 10px;
     border-style: solid;
     border-color: #1F2937;
 
-
-
-
-    
 }
+
+
 
 a {
     text-decoration: none;
-    color: inherit; /* removes blue color form links and underlining */
+    color: inherit; /* removes blue color from links and underlining */
 }
 
 #logo {
@@ -281,8 +333,13 @@ margin-right: auto;
     align-items: center;
     justify-content: center;
     height: 150px;   
-	z-index: 2; /* overlays the picture showing when scrolling down */ 
+
+	z-index: 2; /* overlays the picture popping */ 
     position: relative;
+    border-top: solid;
+    border-width: 0.5px;
+
+    color: white;
 
 
 }
@@ -291,17 +348,22 @@ margin-right: auto;
 
     width: 350px;
     height: 200px;
-    margin-right: 20px;}
+    margin-right: 20px;
+}
 
-.footer2 {
+.footer2 { /* to let some margin top */
 
     background-color: #1F2937;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-height: 150px;   
-margin-top: 500px;
+    height: 150px;   
+    border-width: 0.5px;
+
+    margin-top: 300px;
+    border-top:solid;
+    border-color: white;
 
 
 }
@@ -311,11 +373,14 @@ margin-top: 500px;
 
     border: solid;
     padding: 50px;
-    border-radius: 15px;
+    border-radius: 15px; 
+    background-color: white;
 }
 
+
+
   
-  /* Grow Shadow */
+  /* Grow Shadow on skills page */
   .hvr-grow-shadow {
    
     -webkit-transform: translateZ(0);
@@ -340,11 +405,10 @@ margin-top: 500px;
   .hvr-curl-top-left {
     backface-visibility: hidden; /* hide the back side of rotate dive */
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-
     transform: translateZ(0px);
 }
 .hvr-curl-top-left::before {
-    background: rgba(0, 0, 0, 0) linear-gradient(135deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%) repeat scroll 0 0; /*display smooth transitions between two or more specified colors */
+    background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(255,255, 255, 1) 45%, #aaaaaa 50%, #cccccc 56%, white 80%) repeat scroll 0 0; /*display smooth transitions between two or more specified colors */
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     content: "";
     height: 0;
@@ -362,3 +426,86 @@ margin-top: 500px;
     width: 100px;
     border-radius: 15px;
 }
+
+
+  
+
+.topright{
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+    align-self: right;
+    
+}
+  
+  .toggle-switch {
+    position: relative;
+    width: 60px;
+
+    
+  }
+  
+  label { /* the button for nightmode */
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    background-image: 
+    radial-gradient(rgb(255, 255, 255) 10%, transparent 10%),
+    radial-gradient(rgb(255, 255, 255) 10%, transparent 10%);
+  background-position: 5px 0px, 0px 5px;
+  background-size: 10px 10px;
+  background-color: rgb(31, 41, 55);
+      cursor: pointer;
+    border-radius: 15px;
+    border: solid;
+    border-color: white;
+    border-width: 1Px;
+    margin-left : -10px;
+    margin-top: 10px;
+
+  }
+  
+  input {
+    position: absolute;
+    display: none;
+
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    border-radius: 15px;
+    
+    
+
+  }
+  
+  input:checked ~ .slider {
+    background: rgb(34,85,85);
+    background: linear-gradient(351deg, rgba(34,85,85,1) 0%, rgba(0,212,255,1) 0%, rgba(255,255,255,1) 100%);
+  
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 17px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: inset 5px -2.5px 0px 0px rgb(230,230,230);
+    background-color: #28292c;
+    transition: 0.3s;
+  }
+  
+  input:checked ~ .slider::before {
+    transform: translateX(30px);
+    background-color:yellow;
+
+    box-shadow: none;
+    
+  }
+  
