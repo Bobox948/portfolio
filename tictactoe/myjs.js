@@ -91,37 +91,206 @@ document.addEventListener('DOMContentLoaded', function() { // making sure the do
     // all the code bellow is the game rules
   
     if (div1.innerHTML == 'X' && div2.innerHTML == 'X' && div3.innerHTML == 'X')
-    { setTimeout(function(){ result.innerHTML = `${name1} won`; }, 250); } // settimeout for allowing the display to wait 250ms before showing the winner, letting the time to the innerHTML to be filled
+    { setTimeout(function(){ 
+        
+        result.innerHTML = `${name1} won`; 
+        div1.style.color = "red"
+        div2.style.color = "red"
+
+        div3.style.color = "red"
+        div1.style.borderColor = "white"
+        div2.style.borderColor = "white"
+
+        div3.style.borderColor = "white"
+
+
+    
+    
+    }, 250); 
+    
+    } // settimeout for allowing the display to wait 250ms before showing the winner, letting the time to the innerHTML to be filled
     else if (div4.innerHTML == 'X' && div5.innerHTML == 'X' && div6.innerHTML == 'X')
-    { setTimeout(function(){ result.innerHTML = `${name1} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name1} won`;
+
+    div4.style.color = "red"
+    div5.style.color = "red"
+
+    div6.style.color = "red"
+    div4.style.borderColor = "white"
+    div5.style.borderColor = "white"
+
+    div6.style.borderColor = "white"
+
+
+
+}, 250); }
     else if (div7.innerHTML == 'X' && div8.innerHTML == 'X' && div9.innerHTML == 'X')
-    { setTimeout(function(){ result.innerHTML = `${name1} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name1} won`;
+    div7.style.color = "red"
+    div8.style.color = "red"
+
+    div9.style.color = "red"
+    div7.style.borderColor = "white"
+    div8.style.borderColor = "white"
+
+    div9.style.borderColor = "white"
+
+
+
+}, 250); }
     else if (div1.innerHTML == 'X' && div4.innerHTML == 'X' && div7.innerHTML == 'X')
-    { setTimeout(function(){ result.innerHTML = `${name1} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name1} won`;
+
+    div1.style.color = "red"
+    div4.style.color = "red"
+
+    div7.style.color = "red"
+    div1.style.borderColor = "white"
+    div4.style.borderColor = "white"
+
+    div7.style.borderColor = "white"
+
+}, 250); }
     else if (div2.innerHTML == 'X' && div5.innerHTML == 'X' && div8.innerHTML == 'X')
-    { setTimeout(function(){ result.innerHTML = `${name1} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name1} won`; 
+
+    div2.style.color = "red"
+    div5.style.color = "red"
+
+    div8.style.color = "red"
+    div2.style.borderColor = "white"
+    div5.style.borderColor = "white"
+
+    div8.style.borderColor = "white"
+
+}, 250); }
     else if (div3.innerHTML == 'X' && div6.innerHTML == 'X' && div9.innerHTML == 'X')
-    { setTimeout(function(){ result.innerHTML = `${name1} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name1} won`; 
+
+    div3.style.color = "red"
+    div6.style.color = "red"
+
+    div9.style.color = "red"
+    div3.style.borderColor = "white"
+    div6.style.borderColor = "white"
+
+    div9.style.borderColor = "white"
+
+}, 250); }
     else if (div1.innerHTML == 'X' && div5.innerHTML == 'X' && div9.innerHTML == 'X')
-    { setTimeout(function(){ result.innerHTML = `${name1} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name1} won`; 
+    div1.style.color = "red"
+    div5.style.color = "red"
+
+    div9.style.color = "red"
+    div1.style.borderColor = "white"
+    div5.style.borderColor = "white"
+
+    div9.style.borderColor = "white"
+
+
+}, 250); }
     else if (div3.innerHTML == 'X' && div5.innerHTML == 'X' && div7.innerHTML == 'X')
-    { setTimeout(function(){ result.innerHTML = `${name1} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name1} won`;
+
+    div3.style.color = "red"
+    div5.style.color = "red"
+
+    div7.style.color = "red"
+    div3.style.borderColor = "white"
+    div5.style.borderColor = "white"
+
+    div7.style.borderColor = "white"
+
+}, 250); }
     else if (div1.innerHTML == 'O' && div2.innerHTML == 'O' && div3.innerHTML == 'O')
-    { setTimeout(function(){ result.innerHTML = `${name2} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name2} won`;
+
+    div1.style.color = "red"
+    div2.style.color = "red"
+
+    div3.style.color = "red"
+    div1.style.borderColor = "white"
+    div2.style.borderColor = "white"
+
+    div3.style.borderColor = "white"
+
+}, 250); }
     else if (div4.innerHTML == 'O' && div5.innerHTML == 'O' && div6.innerHTML == 'O')
-    { setTimeout(function(){ result.innerHTML = `${name2} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name2} won`; 
+    div4.style.color = "red"
+    div5.style.color = "red"
+
+    div6.style.color = "red"
+    div4.style.borderColor = "white"
+    div5.style.borderColor = "white"
+
+    div6.style.borderColor = "white"}, 250); }
     else if (div7.innerHTML == 'O' && div8.innerHTML == 'O' && div9.innerHTML == 'O')
-    { setTimeout(function(){ result.innerHTML = `${name2} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name2} won`;
+
+    div7.style.color = "red"
+    div8.style.color = "red"
+
+    div9.style.color = "red"
+    div7.style.borderColor = "white"
+    div8.style.borderColor = "white"
+
+    div9.style.borderColor = "white"}, 250); }
     else if (div1.innerHTML == 'O' && div4.innerHTML == 'O' && div7.innerHTML == 'O')
-    { setTimeout(function(){ result.innerHTML = `${name2} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name2} won`;
+
+    div1.style.color = "red"
+    div4.style.color = "red"
+
+    div7.style.color = "red"
+    div1.style.borderColor = "white"
+    div4.style.borderColor = "white"
+
+    div7.style.borderColor = "white"}, 250); }
     else if (div2.innerHTML == 'O' && div5.innerHTML == 'O' && div8.innerHTML == 'O')
-    { setTimeout(function(){ result.innerHTML = `${name2} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name2} won`; 
+
+    div2.style.color = "red"
+    div5.style.color = "red"
+
+    div8.style.color = "red"
+    div2.style.borderColor = "white"
+    div5.style.borderColor = "white"
+
+    div8.style.borderColor = "white"}, 250); }
     else if (div3.innerHTML == 'O' && div6.innerHTML == 'O' && div9.innerHTML == 'O')
-    { setTimeout(function(){ result.innerHTML = `${name2} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name2} won`;
+
+    div3.style.color = "red"
+    div6.style.color = "red"
+
+    div9.style.color = "red"
+    div3.style.borderColor = "white"
+    div6.style.borderColor = "white"
+
+    div9.style.borderColor = "white"}, 250); }
     else if (div1.innerHTML == 'O' && div5.innerHTML == 'O' && div9.innerHTML == 'O')
-    { setTimeout(function(){ result.innerHTML = `${name2} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name2} won`;
+    div1.style.color = "red"
+    div5.style.color = "red"
+
+    div9.style.color = "red"
+    div1.style.borderColor = "white"
+    div5.style.borderColor = "white"
+
+    div9.style.borderColor = "white" }, 250); }
     else if (div3.innerHTML == 'O' && div5.innerHTML == 'O' && div7.innerHTML == 'O')
-    { setTimeout(function(){ result.innerHTML = `${name2} won`; }, 250); }
+    { setTimeout(function(){ result.innerHTML = `${name2} won`; 
+
+    div3.style.color = "red"
+    div5.style.color = "red"
+
+    div7.style.color = "red"
+    div3.style.borderColor = "white"
+    div5.style.borderColor = "white"
+
+    div7.style.borderColor = "white"}, 250); }
     else if ((div1.innerHTML == 'O' ||div1.innerHTML == 'X') && 
     (div2.innerHTML == 'O' || div2.innerHTML == 'X') &&
     (div3.innerHTML == 'O' || div3.innerHTML == 'X') &&
