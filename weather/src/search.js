@@ -11,7 +11,14 @@ export async function search(e){
 
 const result = await response.json(); // the reponse
 
-content.innerHTML = `Temperature in ${search} : ${result.main.temp}°C`
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+var search2 = capitalizeFirstLetter(search)
+
+
+content.innerHTML = `Temperature in ${search2} : ${result.main.temp}°C`
 
 if (result.main.temp < 15) // if temp is cold, we display a grey background and erase the sun
 {
@@ -36,6 +43,5 @@ else {
     
 }
     
-console.log("yes")
 }
 
