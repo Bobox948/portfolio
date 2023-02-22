@@ -1,0 +1,3 @@
+[submodule "weather"]
+	path = weather-app-api
+	url = git@github.com:Bobox948/weather-app-api.git
