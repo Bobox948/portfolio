@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Getting Started - Leaflet js Map interactive library</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="map" style="width: 1000px; height: 600px;"></div>
+<script>
+var newMap = L.map('map').setView([48.5188702,2.2508398], 8);
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+attribution: '&copy; <a href=”http://osm.org/copyright”>OpenStreetMap</a> contributors'
+}).addTo(newMap);
+
+/*
+fetch('https://public.opendatasoft.com/api/records/1.0/search/?dataset=vigicrues&q=&facet=station_id&facet=lbstationhydro&facet=cdcommune&facet=timestamp&facet=cdzonehydro&facet=nom_com&facet=nom_epci&facet=nom_dep&facet=nom_reg',  {mode: 'cors'
+
+})
+.then(function(response) {
+      return response.json();
+    })
+    .then(function(response) {
+
+
+		var marker = L.marker(response.records[0].geometry.coordinates).addTo(newMap);
+
+    // Adding marker to the map
+
+    })
+
+	*/
+
+
+// loading GeoJSON file - Here my html and usa_adm.geojson file resides in same folder
+$.getJSON("https://api-ratp.herokuapp.com/metros",function(data){
+// L.geoJson function is used to parse geojson file and load on to map
+
+
+L.geoJson(data, {
+	style: function (feature) {
+		return {color: feature.properties.color};
+	},
+	onEachFeature: function (feature, layer) {
+		layer.bindPopup(feature.properties.description);
+	}
+}).addTo(newMap);
+
+
+});
+
+
+
+
+ /* fetch('https://layers.resiliency.fr/teleray',  {mode: 'cors'
+
+})
+.then(function(response) {
+      return response.json();
+    })
+    .then(function(response) {
+
+      var geojsonFeature = response
+
+      L.geoJSON(geojsonFeature).addTo(map);
+
+})
+*/
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
