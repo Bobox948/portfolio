@@ -1,0 +1,86 @@
+body { min-width:1000px;
+    /* this way, when we shrink the page, the squares don't wrap*/
+  
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); /* gradient*/
+}
+.content{
+
+    min-height: 10px; /* for the div squares */
+    min-width: 10px;
+    max-width: 10px;
+    max-height: 10px;
+
+
+
+}
+h1{
+    font-family: cursive;
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+.mid{
+
+    display: flex;
+    justify-content: center
+}
+
+#restart{
+
+    border: solid;
+    border-width: 1px;
+    padding: 2.5px;
+    border-radius: 2.5px;
+    background-color: white;
+}
+.mid2{
+
+    display: flex;
+    justify-content: center;
+    gap : 200px;
+    margin-top: 15px;
+}
+
+span{
+    border: solid;
+    border-width: 1px;
+    padding: 2.5px;
+    border-radius: 2.5px;
+    background-color: white;
+
+}
+.container {    
+
+    display: flex;
+    flex-wrap: wrap;
+    border: solid;
+    width: 750px;
+    height: 750px;
+    background-color: #fefee0;
+    box-shadow: 5px 5px 15px black;
+
+     
+}
+
+.break {
+    flex-basis: 100%;
+
+  }
+
+  .hidden {
+    display: none; /* for the erase button */
+  }
+  
+
+  
+  
+  input:checked+label>.text { /* for the erase button */
+    color: red;
+    font-weight: bold;
+    border-width: 2px;
+  }
+  
+  #colorpicker{
+    margin-top: -5px;
+  }
