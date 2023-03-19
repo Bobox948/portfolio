@@ -84,3 +84,19 @@ span{
   #colorpicker{
     margin-top: -5px;
   }
+  @media screen and (max-width: 800px) {
+    body {
+        min-width:500px    }
+
+
+        .content{
+
+            min-height: 5px; /* for the div squares */
+            min-width: 5px;
+            max-width: 5px;
+            max-height: 5px;
+        
+        
+        
+        }
+  }

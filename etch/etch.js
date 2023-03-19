@@ -45,6 +45,7 @@ for (let i=0;i < divcolor2.length;i++){
 divcolor2[i].addEventListener('mouseover', changecolor) // the divs will change color mousedown + mouseover 
 divcolor2[i].addEventListener('mousedown', changecolor)
 
+divcolor2[i].addEventListener('touchstart', changecolor)
 
  
     
