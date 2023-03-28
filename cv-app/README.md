@@ -1,0 +1,1 @@
+To update this app, first go to the working directory or clone the repository of the app. Then, edit it, then run "npm run build" in the terminal. Then copy this build folder and paste it here in the portfolio, with the name "cv-app"
