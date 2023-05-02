@@ -10,7 +10,7 @@ const slider = document.querySelector(".slider");
 
 
 
-slider.addEventListener("keydown", function(event) {
+slider.addEventListener("keydown", function(event) { // for accessibility, the enter key does the swap function
     if (event.key === "Enter" || event.keyCode === 13) {
        
         swap();
