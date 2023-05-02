@@ -5,9 +5,17 @@ document.addEventListener('DOMContentLoaded', function() { // making sure the do
 
 const change = document.getElementById('switch') // night mode switcher 
 
+const slider = document.querySelector(".slider");
 
 
 
+
+slider.addEventListener("keydown", function(event) {
+    if (event.key === "Enter" || event.keyCode === 13) {
+       
+        swap();
+    }
+});
 
 
 change.addEventListener('change', swap)
@@ -70,3 +78,5 @@ function swap(){
    }
    
 }
+
+
