@@ -78,7 +78,7 @@
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
+    font-size: 58px;
     color: white;
 }
 
@@ -511,75 +511,6 @@ margin-right: auto;
   }
   
 
-/* 3D animation */
 
-  .container3 {
-    position: relative;
-    width: 100%;
-    height: 200px;
-background-color: transparent;    
-    justify-content: center;
-    margin: 0.5em auto;
-    -webkit-perspective: 420px;
-            perspective: 420px;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-  }
-  
-  .square {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    justify-content: center;
-
-    top: 50px;
-    left: calc(50% - 50px);
-    display: -webkit-box;
-    display: flex;
-   
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center;
-    font-size: 80px;
-    color: white;
-
-  }
-  
-  .squareA {
-    -webkit-animation: sqrA 6s infinite linear;
-            animation: sqrA 6s infinite linear;
-  }
-  
-  @-webkit-keyframes sqrA {
-    from {
-      -webkit-transform:  rotateY(0deg);
-              transform:  rotateY(0deg);
-    }
-    to {
-      -webkit-transform: rotateY(360deg);
-              transform:  rotateY(360deg);
-    }
-  }
-  
-  @keyframes sqrA {
-    from {
-      -webkit-transform: rotateY(0deg);
-              transform: rotateY(0deg);
-    }
-    to {
-      -webkit-transform:  rotateY(360deg);
-              transform:  rotateY(360deg);
-    }
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
