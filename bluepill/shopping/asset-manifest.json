@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bluepill/portfolio/shopping/static/css/main.cc2b5e09.css",
-    "main.js": "/bluepill/portfolio/shopping/static/js/main.04168372.js",
-    "static/media/cart.png": "/bluepill/portfolio/shopping/static/media/cart.0edb59010b1db3cbc904.png",
-    "static/media/images.jpeg": "/bluepill/portfolio/shopping/static/media/images.db413998e6dd9382a218.jpeg",
-    "static/media/shop.png": "/bluepill/portfolio/shopping/static/media/shop.35a069b83c8931a12138.png",
-    "index.html": "/bluepill/portfolio/shopping/index.html",
-    "main.cc2b5e09.css.map": "/bluepill/portfolio/shopping/static/css/main.cc2b5e09.css.map",
-    "main.04168372.js.map": "/bluepill/portfolio/shopping/static/js/main.04168372.js.map"
+    "main.css": "/portfolio/bluepill/shopping/static/css/main.cc2b5e09.css",
+    "main.js": "/portfolio/bluepill/shopping/static/js/main.c1d8c4e9.js",
+    "static/media/cart.png": "/portfolio/bluepill/shopping/static/media/cart.0edb59010b1db3cbc904.png",
+    "static/media/images.jpeg": "/portfolio/bluepill/shopping/static/media/images.db413998e6dd9382a218.jpeg",
+    "static/media/shop.png": "/portfolio/bluepill/shopping/static/media/shop.35a069b83c8931a12138.png",
+    "index.html": "/portfolio/bluepill/shopping/index.html",
+    "main.cc2b5e09.css.map": "/portfolio/bluepill/shopping/static/css/main.cc2b5e09.css.map",
+    "main.c1d8c4e9.js.map": "/portfolio/bluepill/shopping/static/js/main.c1d8c4e9.js.map"
   },
   "entrypoints": [
     "static/css/main.cc2b5e09.css",
-    "static/js/main.04168372.js"
+    "static/js/main.c1d8c4e9.js"
   ]
 }

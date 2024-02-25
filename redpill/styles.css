@@ -36,6 +36,15 @@
     color: #0F0;
 
 }
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #0F0;
+
+    
+}
 .header {
     background-color: black;
     color: #0F0;
@@ -43,7 +52,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 175px;
     
 }
 .navbar.navbar-expand-sm.navbar-dark{ /* when dark mode is activated, the navbar turns into navbar-dark from boostrap */

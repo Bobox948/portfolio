@@ -1,5 +1,4 @@
 
-
 .light { /* declaring variables for the dark and light mode */
     --main-bg-color:white;
     --main-tx-color: #1F2937;
@@ -36,7 +35,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 175px;
     
 }
 .navbar.navbar-expand-sm.navbar-dark{ /* when dark mode is activated, the navbar turns into navbar-dark from boostrap */
@@ -428,13 +427,13 @@ margin-right: auto;
 }
 
 
-  
 
-.topright{
+.top{
     display: flex;
-    justify-content: right;
-    justify-items: right;
-    align-self: right;
+    justify-content: space-between;
+    background-color: #1F2937;
+    color: white;
+
     
 }
   
