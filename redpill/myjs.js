@@ -31,8 +31,8 @@ function MyFadeFunction() {
 
 function MyFadeFunction2() {
    if (myopacity>0) {
-      myopacity -= .033;
-     setTimeout(function(){MyFadeFunction2()},75);
+      myopacity -= .015;
+     setTimeout(function(){MyFadeFunction2()},100);
    }
    document.getElementById('glasses').style.opacity = myopacity;
 
@@ -41,7 +41,7 @@ function MyFadeFunction2() {
 
  setTimeout(function(){
     MyFadeFunction2()
- },3000)
+ },3500)
 
 
 myID = document.getElementById("image3");
