@@ -3,50 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choose</title>
-</head>
-<style>
-#morpheus{
-    display:flex; 
-    justify-content: center;
-}
-body{
-    background-color: black;
-}
-</style>
-<body>
+    <title>Document</title>
+    <style>
+        body {background-color: black;
+            
+            color: #00ff00;
+        
+        
+        font-size: 30px;}
+            
+            div {
+                margin-left: 100px;
+                margin-top: 200px;
+            }
 
-<div id="morpheus">
-    <img id="myimage" src="./morpheus.webp"> <!-- credit https://mrwallpaper.com/ -->
+            #player{
+                display: none
+            }
+    </style>
+</head>
+<body>
 </div>
+<audio id="player" controls autoplay loop>
+  <source src="./redpill/gifs/matrix.mp3" type="audio/mp3"> <!-- credit to matrix movie -->
+</audio>
+</div>
+
+    <div id="one"></div>
 
 <script>
 
+    document.addEventListener('DOMContentLoaded', function() { // making sure the doam is loaded first, after that we can locate elements by ID easily
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+          }
+
+        arr1 = Array.from("Wake up, Friend...")
    
-    myimage.onclick = async function(e) { 
-    
-        var ratioX = e.target.naturalWidth / e.target.offsetWidth;
-            var ratioY = e.target.naturalHeight / e.target.offsetHeight;
-          
-            var domX = e.x + window.pageXOffset - e.target.offsetLeft;
-            var domY = e.y + window.pageYOffset - e.target.offsetTop;
-          
-            var x = Math.floor(domX * ratioX);
-            var y = Math.floor(domY * ratioY); 
-    
-    
-            if (x >= 580 && x <= 600 && y >= 540 && y <= 610) {
-                // Redirection vers la page du portfolio
-                window.location.href = "./redpill/front.html";
+        arr2 = Array.from("The Matrix has you...")
+
+        async function delayedLoop() {
+
+                for (let i=0; i<arr1.length; i++)
+                {
+                    await delay(200)
+
+                    document.querySelector("#one").innerHTML += arr1[i]                    
+                    
 
             }
-            else if (x >= 875 && x <= 910 && y >= 550 && y <= 575) {
-                // Redirection vers la page matrix
-                window.location.href = "./bluepill/index.html";
 
-            }
+            await delay(2000)
+
+
+        }
     
+        async function delayedLoop2() {
+            document.querySelector("#one").innerHTML = ""
+
+            for (let j=0; j<arr2.length; j++)
+            {
+                await delay(200)
+                document.querySelector("#one").innerHTML += arr2[j]                    
+                
+
+        }
+
+        
+
     }
+        async function display(){
+            await delay(1000)
+
+        await delayedLoop()
+        await delay(1000)
+
+        delayedLoop2()
+
+        }
+
+        display()
+
+        setTimeout(function(){ window.location = './morpheus.html'; }, 17500);
+
+
+    })
 </script>
 </body>
+
 </html>

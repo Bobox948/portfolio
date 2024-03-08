@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose</title>
+</head>
+<style>
+#morpheus{
+    display:flex; 
+    justify-content: center;
+}
+body{
+    background-color: black;
+}
+</style>
+<body>
+
+<div id="morpheus">
+    <img id="myimage" src="./morpheus.webp"> <!-- credit https://mrwallpaper.com/ -->
+</div>
+
+<script>
+
+   
+    myimage.onclick = async function(e) { 
+    
+        var ratioX = e.target.naturalWidth / e.target.offsetWidth;
+            var ratioY = e.target.naturalHeight / e.target.offsetHeight;
+          
+            var domX = e.x + window.pageXOffset - e.target.offsetLeft;
+            var domY = e.y + window.pageYOffset - e.target.offsetTop;
+          
+            var x = Math.floor(domX * ratioX);
+            var y = Math.floor(domY * ratioY); 
+    
+    
+            if (x >= 580 && x <= 600 && y >= 540 && y <= 610) {
+                // Redirection vers la page du portfolio
+                window.location.href = "./redpill/front.html";
+
+            }
+            else if (x >= 875 && x <= 910 && y >= 550 && y <= 575) {
+                // Redirection vers la page matrix
+                window.location.href = "./bluepill/index.html";
+
+            }
+    
+    }
+</script>
+</body>
+</html>
